@@ -8,9 +8,9 @@ import img4 from "./assets/pic4.png";
 function App() {
   return (
     <Div>
-      <h1>Manila 13 Tattoo</h1>
+      <H1>Manila13 </H1>
+      <H1>Tattoo </H1>
       <PicDiv>
-        {" "}
         <Img src={img1} />
         <Img src={img2} />
         <Img src={img3} />
@@ -28,6 +28,19 @@ const Div = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media (max-width: 900px) {
+    width: 50%;
+    margin: 0 auto;
+  }
+  @media (max-width: 896px) {
+    width: 70%;
+    margin: 0 auto;
+  }
+`;
+
+const H1 = styled.div`
+  font-size: 38px;
+  text-align: left;
 `;
 
 const PicDiv = styled.div`
