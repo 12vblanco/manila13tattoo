@@ -36,6 +36,9 @@ const Div = styled.div`
     width: 70%;
     margin: 0 auto;
   }
+  @media (max-width: 640px) {
+    width: 100%;
+  }
 `;
 
 const H1 = styled.div`
@@ -55,6 +58,11 @@ const Img = styled.img`
   height: 200px;
   border-radius: 6px;
   margin: 12px;
+  @media (max-width: 450px) {
+    margin: 8px;
+    width: calc(50vw - 16px);
+    height: calc(50vw - 16px);
+  }
 `;
 
 export default App;
